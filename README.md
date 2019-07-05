@@ -9,5 +9,5 @@ Here are a few I've gleaned from his article that I found particularly helpful. 
 
 * `npm i -D cross-env` - (Make Scripts Cross-Platform Compatible)
 * `npm i -D concurrently` - (Run Scripts in Parallel)
-* `npm i -g ntl` - (List and Select Available Scripts)  
-  * Then run the `ntl` command in the project folder. You’ll get a list of available scripts, with the option of selecting one of them to run.
+* `npm i -g ntl` - (List and Select Available Scripts)
+    - Then run the `ntl` command in the project folder. You’ll get a list of available scripts, with the option of selecting one of them to run.
