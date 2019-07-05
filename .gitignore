@@ -1,2 +1,7 @@
+# Directories / folders to ignore
+
+/node_modules
+
+# Files to ignore
 .sass-cache/
 *.css.map

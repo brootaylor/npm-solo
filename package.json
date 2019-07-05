@@ -19,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/brootaylor/npm-solo/issues"
   },
-  "homepage": "https://github.com/brootaylor/npm-solo#readme"
+  "homepage": "https://github.com/brootaylor/npm-solo#readme",
+  "devDependencies": {
+    "cross-env": "^5.2.0"
+  }
 }
