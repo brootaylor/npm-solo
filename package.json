@@ -4,6 +4,7 @@
   "description": "A build system just using NPM. No Gulp or Grunt etc.",
   "main": "index.js",
   "scripts": {
+    "install": "npm install",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": "https://github.com/brootaylor/npm-solo.git",
