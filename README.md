@@ -2,6 +2,19 @@
 
 A build system just using NPM. No Gulp or Grunt etc.
 
+## Things I want this build config to do
+
+1. Compile a templating language into HTML - (Handlebars, Nunjucks, Liquid...?)
+   - Use Markdown for content
+2. Compile SCSS into CSS
+   - PostCSS
+   - Minify
+3. Compile ES6 into compatible JS
+   - Babel
+   - Minify
+4. Image minification
+5. Add various files to a build directory eg. `www`
+
 ## Helpful NPM tips
 
 Thanks to Bret Cameron for this article - [13 npm Tricks for Faster JavaScript Development](https://medium.com/@bretcameron/13-npm-tricks-for-faster-javascript-development-4fe2a83f87a2). It's primary targeted at JS development but there are definitely some take-aways if JS isn't necessarily your focus.
