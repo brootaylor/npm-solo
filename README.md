@@ -4,16 +4,15 @@ A build system just using NPM. No Gulp or Grunt etc.
 
 ## Things I want this build config to do
 
-1. Compile a templating language into HTML - (Handlebars, Nunjucks, Liquid...?)
-   - Use Markdown for content
-2. Compile SCSS into CSS
-   - PostCSS
-   - Minify
-3. Compile ES6 into compatible JS
-   - Babel
-   - Minify
-4. Image minification
-5. Add various files to a build directory eg. `www`
+1. Templating language into HTML - (Handlebars, Nunjucks, Liquid...?)
+2. SCSS compiling
+3. CSS pre- or postprocessor
+4. JavaScript Linting and Testing
+5. ES6 transpiler
+6. Dependency Management
+7. JS Uglification
+8. File watcher
+9. Image minification
 
 ## Helpful NPM tips
 
