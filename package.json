@@ -12,7 +12,7 @@
     "url": "https://github.com/brootaylor/npm-solo/issues"
   },
   "homepage": "https://github.com/brootaylor/npm-solo#readme",
-  "license": "MIT",
+  "license": "SEE LICENSE IN LICENSE",
   "scripts": {
     "start": "npm install",
     "clean": "rm -f dist/{css/*,js/*,images/*}",
