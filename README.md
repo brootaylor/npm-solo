@@ -2,6 +2,12 @@
 
 A build system just using NPM. No Gulp or Grunt etc.
 
+---
+
+**I'm not sure whether this is ideal buld config for larger projects**
+
+---
+
 ## Things I want this build config to do
 
 **Some of these have been completed now as can be seen in the `package.json` file**.
