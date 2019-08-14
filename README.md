@@ -4,7 +4,7 @@ A build system just using NPM. No Gulp or Grunt etc.
 
 ---
 
-**I'm not sure whether this is ideal buld config for larger projects**
+**I'm not sure whether this is a ideal build config for larger projects. Maybe that's when *Gulp* is better**
 
 ---
 
