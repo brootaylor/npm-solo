@@ -4,7 +4,7 @@ A build system just using NPM. No Gulp or Grunt etc.
 
 ## Things I want this build config to do
 
-*Some of these have been completed now as can be seen in the `package.json` file*.
+**Some of these have been completed now as can be seen in the `package.json` file**.
 
 1. Templating language into HTML - (Handlebars, Nunjucks, Liquid...?)
 2. SCSS compiling
