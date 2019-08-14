@@ -37,8 +37,8 @@ Here are a few tips I've gleaned from his article that I found particularly help
 
 * `npm install -g json` - (**Edit package.json from the Command Line**)
   * Then you can use it for in-place editing with -I . For example, to add a new script “foo” with the value “bar”, type: `json -I -f package.json -e 'this.scripts.foo="bar"'`
-* `npm i -D cross-env` - (**Make Scripts Cross-Platform Compatible**)
-* `npm i -D concurrently` - (**Run Scripts in Parallel**)
+* `npm i -D cross-env` - (**Make Scripts Cross-Platform Compatible eg. for Windows users**)
+* `npm i -D npm-run-all` - (**Run Scripts in Parallel**)
 * `npm i -g ntl` - (**List and Select Available Scripts**)
   * Then run the `ntl` command in the project folder. You’ll get a list of available scripts, with the option of selecting one of them to run.
 
