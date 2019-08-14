@@ -2,23 +2,54 @@
   "name": "npm-solo",
   "version": "1.0.0",
   "description": "A build system just using NPM. No Gulp or Grunt etc.",
-  "main": "index.js",
-  "scripts": {
-    "install": "npm install",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "author": "Bruce Taylor",
   "repository": "https://github.com/brootaylor/npm-solo.git",
   "keywords": [
     "npm",
     "build"
   ],
-  "author": "Bruce Taylor",
-  "license": "MIT",
   "bugs": {
     "url": "https://github.com/brootaylor/npm-solo/issues"
   },
   "homepage": "https://github.com/brootaylor/npm-solo#readme",
+  "license": "MIT",
+  "scripts": {
+    "start": "npm install",
+    "clean": "rm -f dist/{css/*,js/*,images/*}",
+    "scss": "node-sass --output-style compressed -o dist/css src/scss",
+    "autoprefixer": "postcss -u autoprefixer -r dist/css/*",
+    "lint": "eslint src/js",
+    "uglify": "mkdir -p dist/js && uglifyjs src/js/*.js -m -o dist/js/app.js && uglifyjs src/js/*.js -m -c -o dist/js/app.min.js",
+    "imagemin": "imagemin src/images --out-dir dist/images -p",
+    "icons": "svgo -f src/images/icons && mkdir -p dist/images && svg-sprite-generate -d src/images/icons -o dist/images/icons.svg",
+    "serve": "browser-sync start --server --files 'dist/css/*.css, dist/js/*.js, **/*.html, !node_modules/**/*.html'",
+    "build:css": "npm run scss && npm run autoprefixer",
+    "build:js": "npm run lint && npm run uglify",
+    "build:images": "npm run imagemin && npm run icons",
+    "build:all": "npm run build:css && npm run build:js && npm run build:images",
+    "watch:css": "onchange 'src/scss/*.scss' -- npm run build:css",
+    "watch:js": "onchange 'src/js/*.js' -- npm run build:js",
+    "watch:all": "concurrently 'npm run serve' 'npm run watch:css' 'npm run watch:js'",
+    "postinstall": "npm run watch:all"
+  },
   "devDependencies": {
-    "cross-env": "^5.2.0"
-  }
+    "autoprefixer": "^9.6.1",
+    "browser-sync": "^2.26.7",
+    "concurrently": "^4.1.1",
+    "cross-env": "^5.2.0",
+    "eslint": "^6.1.0",
+    "imagemin-cli": "^5.0.0",
+    "node-sass": "^4.12.0",
+    "onchange": "^6.0.0",
+    "postcss-cli": "^6.1.3",
+    "svg-sprite-generator": "0.0.7",
+    "svgo": "^1.3.0",
+    "uglify-js": "^3.6.0"
+  },
+  "dependencies": {},
+  "browserslist": [
+    "last 4 version",
+    "> 1%",
+    "IE 10"
+  ]
 }
